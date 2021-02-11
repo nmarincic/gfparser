@@ -2,11 +2,9 @@
 > Pulls useful information from the web, helping you make flashcards for learning the German language.
 
 
-This file will become your README and also the index of your documentation.
+Welcome to GF parser, an app to help you make flashcards for learning German faster!
 
 ## Install
-
-##### Still not working!
 
 `pip install gfparser`
 
