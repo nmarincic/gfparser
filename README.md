@@ -1,5 +1,5 @@
-# Project name here
-> Summary description here.
+# GF Parser 
+> Pulls useful information from the web, helping you make flashcards for learning the German language.
 
 
 This file will become your README and also the index of your documentation.
