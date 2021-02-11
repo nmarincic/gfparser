@@ -10,8 +10,17 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: gfparser
-      url: core.html
+      title: WordType
+      url: wordtype.html
+    - output: web,pdf
+      title: WikiParser
+      url: wikiparser.html
+    - output: web,pdf
+      title: Word
+      url: word.html
+    - output: web,pdf
+      title: Config
+      url: config.html
     output: web
     title: gfparser
   output: web

@@ -1,6 +1,9 @@
 {
   "gfparser": {
     "Overview": "/",
-    "gfparser": "core.html"
+    "WordType": "wordtype.html",
+    "WikiParser": "wikiparser.html",
+    "Word": "word.html",
+    "Config": "config.html"
   }
 }

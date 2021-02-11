@@ -1,6 +1,6 @@
 ---
 
-title: gfparser
+title: GF Parser
 
 
 keywords: fastai
@@ -33,31 +33,6 @@ nb_path: "00_core.ipynb"
     
 <div class="cell border-box-sizing code_cell rendered">
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="say_hello" class="doc_header"><code>say_hello</code><a href="https://github.com/nmarincic/gfparser/tree/master/gfparser/core.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>say_hello</code>(<strong><code>to</code></strong>)</p>
-</blockquote>
-<p>Say hello to somebody</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
 </div>
     {% endraw %}
 
@@ -68,26 +43,10 @@ nb_path: "00_core.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">say_hello</span><span class="p">(</span><span class="s2">&quot;Nikola&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">parser</span> <span class="o">=</span> <span class="n">WikiParser</span><span class="p">()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;Hello Nikola!&#39;</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -101,10 +60,80 @@ nb_path: "00_core.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_eq</span><span class="p">(</span><span class="n">say_hello</span><span class="p">(</span><span class="s2">&quot;Nikola&quot;</span><span class="p">),</span> <span class="s2">&quot;Hello Nikola!&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">([</span><span class="s1">&#39;Hund&#39;</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">parser</span><span class="o">.</span><span class="n">words</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="n">w</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Downloading words
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>fetching the word: Hund
+
+URL: https://de.wiktionary.org/wiki/Hund
+URL: https://de.wiktionary.org/w/api.php?action=parse&amp;format=json&amp;prop=wikitext&amp;disabletoc=&amp;page=Hund
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>0% [█] 100% | ETA: 00:00:00 | Item ID: Hund            
+Total time elapsed: 00:00:00
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>extract_languages | language found: Deutsch 
+there is genus
+there are 1 matches (genus):
+index: 0, genus: m
+there are 1 matches (plural):
+index: 0, plural: Hunde
+there is genus
+there are 1 matches (genus):
+index: 0, genus: m
+no plurals I guess
+the word is not a substantive
+No word genus at all!
+no plurals I guess
+the word is not a substantive
+the word has an IPA!
+there are 1 matches (IPA):
+the word has an IPA!
+there are 1 matches (IPA):
+the word has an IPA!
+there are 1 matches (IPA):
+There are examples
+number of examples: 10
+There are examples
+number of examples: 1
+There are examples
+number of examples: 7
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 

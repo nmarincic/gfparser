@@ -2,9 +2,32 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"say_hello": "00_core.ipynb"}
+index = {"santa": "01_wordtype.ipynb",
+         "format_caption": "01_wordtype.ipynb",
+         "WordType": "01_wordtype.ipynb",
+         "remove_duplicates_keep_order": "02_wikiparser.ipynb",
+         "load_words_from_file": "02_wikiparser.ipynb",
+         "__filter_line": "02_wikiparser.ipynb",
+         "read_textfile": "02_wikiparser.ipynb",
+         "is_special": "02_wikiparser.ipynb",
+         "is_different_spelling": "02_wikiparser.ipynb",
+         "is_word_derivate": "02_wikiparser.ipynb",
+         "WikiParser": "02_wikiparser.ipynb",
+         "Word": "03_word.ipynb",
+         "wiki_site": "04_config.ipynb",
+         "wiki_options": "04_config.ipynb",
+         "wiki_normal": "04_config.ipynb",
+         "regex_wortart": "04_config.ipynb",
+         "regex_discard": "04_config.ipynb",
+         "regex_word_type": "04_config.ipynb",
+         "regex_proper_spelling": "04_config.ipynb",
+         "regex_basic_word": "04_config.ipynb",
+         "complex_kinds": "04_config.ipynb"}
 
-modules = ["core.py"]
+modules = ["wordtype.py",
+           "wikiparser.py",
+           "word.py",
+           "config.py"]
 
 doc_url = "https://nmarincic.github.io/gfparser/"
 
